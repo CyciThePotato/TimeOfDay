@@ -1,10 +1,13 @@
 package timeofday;
 
+/**
+ * @invar 
+ */
 public class TimeOfDay {
 	/**
-	 * @invar uren zijn geldig
+	 * @invar uren zijn niet negatief of groter dan 23
 	 * 	| 0 <= getUren() && getUren() <= 23
-	 * @invar msm zijn geldig
+	 * @invar msm zijn niet negatief of groter dan 59
 	 * 	| 0 <= getMsm() && getMsm() <= 59
 	 */
 	private int uren;
@@ -46,6 +49,7 @@ public class TimeOfDay {
 		this.uren = uren;
 	}
 	/**
+	 * Stel het aantal minuten sinds middernacht in.
 	 * @pre het aantal minuten ligt tussen 0 en 59
 	 * 	| 0 <= this.getMsm() && this.getMsm() <= 59
 	 * @post de uren zijn gelijk aan de gegeven uren
