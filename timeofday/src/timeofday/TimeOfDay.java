@@ -54,5 +54,5 @@ public class TimeOfDay {
 	public void setMsm(int msm) {
 		this.msm = msm;
 	}
-	
+
 }
