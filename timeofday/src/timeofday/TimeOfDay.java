@@ -1,8 +1,5 @@
 package timeofday;
 
-/**
- * @invar 
- */
 public class TimeOfDay {
 	/**
 	 * @invar uren zijn niet negatief of groter dan 23
