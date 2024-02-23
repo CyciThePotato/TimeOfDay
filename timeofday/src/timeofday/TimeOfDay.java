@@ -25,10 +25,7 @@ public class TimeOfDay {
 	 * 
 	 */
 	public TimeOfDay(int hours, int min) {
-		System.out.println("OK");
 		this.uren = hours;
-		System.out.println("OK");
-
 		this.msm = min;
 	}
 	
