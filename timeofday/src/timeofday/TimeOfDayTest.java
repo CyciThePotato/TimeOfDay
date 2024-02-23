@@ -10,32 +10,32 @@ class TimeOfDayTest {
 	void test() {
 		TimeOfDay ochtend = new TimeOfDay(1, 1);
 		assertEquals(ochtend.getUren(), 1);
-		assertEquals(ochtend.getMsm(), 1);
+		assertEquals(ochtend.getMin(), 1);
 		ochtend.setUren(23);
-		ochtend.setMsm(0);
+		ochtend.setMin(0);
 		assertEquals(23, ochtend.getUren());
-		assertEquals(0, ochtend.getMsm());
+		assertEquals(0, ochtend.getMin());
 		int hours = ochtend.getUren();
-		int min = ochtend.getMsm();
+		int min = ochtend.getMin();
 		ochtend.setUren(0);
-		ochtend.setMsm(0);
+		ochtend.setMin(0);
 		assertNotEquals(ochtend.getUren(), hours);
-		assertEquals(ochtend.getMsm(), min);
+		assertEquals(ochtend.getMin(), min);
 		
 		
 		TimeOfDay middernacht = new TimeOfDay(0, 0);
 		assertEquals(middernacht.getUren(), 0);
-		assertEquals(middernacht.getMsm(), 0);
+		assertEquals(middernacht.getMin(), 0);
 		int uren = middernacht.getUren();
-		int msm = middernacht.getMsm();
+		int msm = middernacht.getMin();
 		middernacht.setUren(0);
-		middernacht.setMsm(0);
+		middernacht.setMin(0);
 		assertEquals(middernacht.getUren(), uren);
-		assertEquals(middernacht.getMsm(), msm);
+		assertEquals(middernacht.getMin(), msm);
 		
 		TimeOfDay nearly = new TimeOfDay(23, 59);
 		assertEquals(nearly.getUren(), 23);
-		assertEquals(nearly.getMsm(), 59);
+		assertEquals(nearly.getMin(), 59);
 		
 		
 		
